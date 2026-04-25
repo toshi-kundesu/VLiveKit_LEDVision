@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LEDVision
-  m_Shader: {fileID: -6465566751694194690, guid: 47fd5cd19976af34cb2d79024095cc44, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 47fd5cd19976af34cb2d79024095cc44,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -101,7 +102,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 8400000, guid: 29bec3033f200f74688b206036cc801b, type: 2}
+        m_Texture: {fileID: 8400000, guid: 700e506b93e35ce46a2f04dfbfc92ece, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -182,8 +183,8 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _ArchHeight: 3.6
-    - _ArchHeight_1: -89.43
+    - _ArchHeight: 0
+    - _ArchHeight_1: 0
     - _BlendMode: 0
     - _CoatMask: 0
     - _ConservativeDepthOffsetEnable: 0
@@ -303,7 +304,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_941038397df743edb971942aa6a65b41: {r: 2.828427, g: 2.828427, b: 2.828427, a: 0}
+    - Color_941038397df743edb971942aa6a65b41: {r: 2.828427, g: 2.828427, b: 2.828427,
+        a: 0}
     - Color_B7810F92: {r: 1, g: 1, b: 1, a: 0}
     - Vector2_ae16db7065034506a055993c41bbe614: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_ea01576358e3410993f3b88f3d7e3a6b: {r: 50, g: 50, b: 0, a: 0}
@@ -328,7 +330,6 @@ Material:
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
     - _UV_Ratio: {r: 16, g: 9, b: 0, a: 0}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!114 &2702915511473843788
 MonoBehaviour:
   m_ObjectHideFlags: 11

@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "com.toshi.vlivekit.cameraunit": {
-      "version": "https://github.com/toshi-kundesu/VLiveKit_camera.git?path=/Assets/toshi.VLiveKit/VLiveCameraUnit#0.0.2",
+      "version": "https://github.com/toshi-kundesu/VLiveKit_camera.git?path=/Assets/toshi.VLiveKit/VLiveCameraUnit#0.0.4",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.cinemachine": "2.9.7"
       },
-      "hash": "b9bc490e634c388b8c9dc1eaa3219cec842385d6"
+      "hash": "0b39cd922502482659f3f7789a4e2ea6287e73cc"
     },
     "com.toshi.vlivekit.lensfilters": {
       "version": "https://github.com/toshi-kundesu/VLiveKit_LiveLensFilters.git?path=/Assets/toshi.VLiveKit/LiveLensFilters#0.0.1",
@@ -17,13 +17,6 @@
         "com.unity.visual-compositor": "0.30.7-preview"
       },
       "hash": "9d20acc01c38b3590d6cfe0f3b7316a9264697bc"
-    },
-    "com.toshi.vlivekit.testassetscontainer": {
-      "version": "https://github.com/toshi-kundesu/VLiveKit_TestAssetsContainer.git?path=/Assets/toshi.VLiveKit/TestAssetsContainer#0.0.4",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "3534b9057fb046d3ece4af657275efd2bdb287fb"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

@@ -1,8 +1,7 @@
 {
   "dependencies": {
     "com.toshi.vlivekit.lensfilters": "https://github.com/toshi-kundesu/VLiveKit_LiveLensFilters.git?path=/Assets/toshi.VLiveKit/LiveLensFilters#0.0.1",
-    "com.toshi.vlivekit.cameraunit": "https://github.com/toshi-kundesu/VLiveKit_camera.git?path=/Assets/toshi.VLiveKit/VLiveCameraUnit#0.0.2",
-    "com.toshi.vlivekit.testassetscontainer": "https://github.com/toshi-kundesu/VLiveKit_TestAssetsContainer.git?path=/Assets/toshi.VLiveKit/TestAssetsContainer#0.0.4",
+    "com.toshi.vlivekit.cameraunit": "https://github.com/toshi-kundesu/VLiveKit_camera.git?path=/Assets/toshi.VLiveKit/VLiveCameraUnit#0.0.4",
     "com.unity.feature.development": "1.0.1",
     "com.unity.render-pipelines.high-definition": "14.0.8",
     "com.unity.textmeshpro": "3.0.6",
