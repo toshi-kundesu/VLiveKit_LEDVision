@@ -88,7 +88,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _LTCGI: 1
     - _LTCGIEnabled: 1
-    - _Metalic: 0.228
+    - _Metalic: 0.08
     - _OpaqueCullMode: 2
     - _RayTracing: 0
     - _ReceivesSSR: 1
@@ -96,7 +96,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Roughness: 0.109
+    - _Roughness: 0.173
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
