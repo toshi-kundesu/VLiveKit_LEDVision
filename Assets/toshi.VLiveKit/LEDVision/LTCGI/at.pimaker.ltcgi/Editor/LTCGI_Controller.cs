@@ -120,7 +120,8 @@ namespace pi.LTCGI
             if (!File.Exists(gizmoPath))
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(gizmoPath));
-                File.Copy(Path.Combine("Packages", "toshi.vlivekit", "LEDVision", "LTCGI", "Gizmos", "LTCGI_Screen_Gizmo.png"), gizmoPath, true);
+                // Packages/com.toshi.vlivekit.ledvision/LTCGI/Gizmos/LTCGI_Screen_Gizmo.png
+                File.Copy(Path.Combine("Packages", "com.toshi.vlivekit.ledvision", "LTCGI", "Gizmos", "LTCGI_Screen_Gizmo.png"), gizmoPath, true);
                 hasChanges = true;
             }
 
