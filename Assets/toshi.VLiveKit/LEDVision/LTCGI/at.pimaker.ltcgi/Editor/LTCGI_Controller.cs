@@ -110,7 +110,7 @@ namespace pi.LTCGI
             var cgincPath = Path.Combine("Assets", "toshi.VLiveKit", "LEDVision", "LTCGI", "_pi_", "_LTCGI", "Shaders", "LTCGI.cginc");
             if (!File.Exists(cgincPath))
             {
-                var contents = "#include \"" + Path.Combine("Packages", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
+                var contents = "#include \"" + Path.Combine("Assets", "toshi.vlivekit", "LEDVision", "LTCGI", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
                 Directory.CreateDirectory(Path.GetDirectoryName(cgincPath));
                 File.WriteAllText(cgincPath, contents);
                 hasChanges = true;
@@ -120,7 +120,7 @@ namespace pi.LTCGI
             if (!File.Exists(gizmoPath))
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(gizmoPath));
-                File.Copy(Path.Combine("Packages", "toshi.vlivekit.ledvision", "LTCGI", "Gizmos", "LTCGI_Screen_Gizmo.png"), gizmoPath, true);
+                File.Copy(Path.Combine("Packages", "toshi.vlivekit", "LEDVision", "LTCGI", "Gizmos", "LTCGI_Screen_Gizmo.png"), gizmoPath, true);
                 hasChanges = true;
             }
 

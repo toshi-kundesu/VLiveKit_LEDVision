@@ -30,6 +30,7 @@
 
         // preamble: include this first to get access to required types
         #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI_structs.cginc"
+        
 
 
         // then define the accumulator type and callback functions (can forward-declare functions to keep things tidy)
