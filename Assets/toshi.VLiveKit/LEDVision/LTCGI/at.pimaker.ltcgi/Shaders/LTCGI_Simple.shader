@@ -29,7 +29,7 @@
 
             #include "UnityCG.cginc"
             #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/_pi_/_LTCGI/Shaders/LTCGI.cginc"
-            
+        
 
             struct v2f
             {

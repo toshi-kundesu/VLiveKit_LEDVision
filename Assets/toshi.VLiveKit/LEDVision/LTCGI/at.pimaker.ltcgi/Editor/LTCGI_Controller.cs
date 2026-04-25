@@ -108,9 +108,10 @@ namespace pi.LTCGI
         {
             var hasChanges = false;
             var cgincPath = Path.Combine("Assets", "toshi.VLiveKit", "LEDVision", "LTCGI", "_pi_", "_LTCGI", "Shaders", "LTCGI.cginc");
+            // assetsにない場合、UPMなのでPackagesを参照するcgincを作るPackages/com.toshi.vlivekit.ledvision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI.cginc
             if (!File.Exists(cgincPath))
             {
-                var contents = "#include \"" + Path.Combine("Assets", "toshi.vlivekit", "LEDVision", "LTCGI", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
+                var contents = "#include \"" + Path.Combine("Packages", "com.toshi.vlivekit.ledvision", "LTCGI", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
                 Directory.CreateDirectory(Path.GetDirectoryName(cgincPath));
                 File.WriteAllText(cgincPath, contents);
                 hasChanges = true;

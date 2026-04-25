@@ -23,7 +23,7 @@
         #pragma surface surf Standard fullforwardshadows
         #pragma target 3.0
 
-        #include "LTCGI.cginc"
+        #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/_pi_/_LTCGI/Shaders/LTCGI.cginc"
 
         sampler2D _MainTex;
         sampler2D _BumpMap;
