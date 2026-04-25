@@ -29,7 +29,7 @@
         // This shader demonstrates how to use the APIv2 LTCGI functionality, which has access to per-light callbacks
 
         // preamble: include this first to get access to required types
-        #include "Assets/at.pimaker.ltcgi/Shaders/LTCGI_structs.cginc"
+        #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI_structs.cginc"
 
 
         // then define the accumulator type and callback functions (can forward-declare functions to keep things tidy)
