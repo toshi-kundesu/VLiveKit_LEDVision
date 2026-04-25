@@ -29,10 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Boost: 0.26
+    - _Boost: 0.2
     - _DebugMode: 2
     - _LTCGI: 1
-    - _Roughness: 0.32
+    - _Roughness: 0.22
     m_Colors: []
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
