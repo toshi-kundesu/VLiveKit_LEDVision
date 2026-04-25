@@ -452,7 +452,7 @@ namespace pi.LTCGI
                 {
                     try
                     {
-                        _LTCGI_LOD_arrays[lod] = AssetDatabase.LoadAssetAtPath<Texture2DArray>("Assets/LTCGI-Generated/lod-" + curscene + "-" + lod + ".asset");
+                        _LTCGI_LOD_arrays[lod] = AssetDatabase.LoadAssetAtPath<Texture2DArray>("Assets/toshi.VLiveKit/LEDVision/LTCGI/LTCGI-Generated/lod-" + curscene + "-" + lod + ".asset");
                         if (_LTCGI_LOD_arrays[lod] == null) throw new Exception();
                     }
                     catch
@@ -636,7 +636,7 @@ namespace pi.LTCGI
         private Texture2D WriteStaticUniform(LTCGI_Screen[] screens, bool fast, LTCGI_Screen fastScreen = null)
         {
             var curscene = EditorSceneManager.GetActiveScene().name;
-            var path = Path.Combine("Assets", "LTCGI-Generated", "StaticUniform-" + curscene + ".exr");
+            var path = Path.Combine("Assets", "toshi.VLiveKit", "LEDVision", "LTCGI", "LTCGI-Generated", "StaticUniform-" + curscene + ".exr");
 
             if (staticUniformTemp == null)
             {
@@ -678,8 +678,8 @@ namespace pi.LTCGI
                 return staticUniformTemp;
             }
 
-            if (!AssetDatabase.IsValidFolder("Assets/LTCGI-Generated"))
-                AssetDatabase.CreateFolder("Assets", "LTCGI-Generated");
+            if (!AssetDatabase.IsValidFolder("Assets/toshi.VLiveKit/LEDVision/LTCGI/LTCGI-Generated"))
+                AssetDatabase.CreateFolder("Assets/toshi.VLiveKit/LEDVision/LTCGI", "LTCGI-Generated");
             var exr = staticUniformTemp.EncodeToEXR(Texture2D.EXRFlags.OutputAsFloat);
 
             var existed = File.Exists(path);

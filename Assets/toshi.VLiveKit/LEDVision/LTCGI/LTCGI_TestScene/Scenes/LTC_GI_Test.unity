@@ -574,7 +574,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 1
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1, y: 1}
+  m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
-  _LTCGI_static_uniforms: {fileID: 2800000, guid: 4946e6535906e554ebb551201681753d,
+  _LTCGI_static_uniforms: {fileID: 2800000, guid: 45216bf30c4e11d4cb1340e94433bb4e,
     type: 3}
   _LTCGI_ScreenTransforms:
   - {fileID: 804443050}
