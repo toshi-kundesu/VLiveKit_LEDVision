@@ -1,0 +1,7 @@
+{
+    "name": "com.toshi.vlivekit.ledvision",
+    "version": "0.0.1",
+    "displayName": "VLive LED Vision",
+    "description": "LED vision for virtual live production.",
+    "unity": "2022.3"
+  }
