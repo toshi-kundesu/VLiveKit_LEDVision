@@ -107,7 +107,7 @@ namespace pi.LTCGI
         public static void MigratoryBirdsDontMigrateAsMuchAsWeDoButThisFunctionWillTakeCareOfItNonetheless()
         {
             var hasChanges = false;
-            var cgincPath = Path.Combine("Assets", "_pi_", "_LTCGI", "Shaders", "LTCGI.cginc");
+            var cgincPath = Path.Combine("Assets", "toshi.VLiveKit", "LEDVision", "LTCGI", "_pi_", "_LTCGI", "Shaders", "LTCGI.cginc");
             if (!File.Exists(cgincPath))
             {
                 var contents = "#include \"" + Path.Combine("Packages", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
