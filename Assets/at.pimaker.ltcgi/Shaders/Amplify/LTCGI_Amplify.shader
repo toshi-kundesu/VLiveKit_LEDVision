@@ -121,6 +121,7 @@ Shader "LTCGI_Amplify"
 			#include "UnityCG.cginc"
 			#include "Lighting.cginc"
 			#include "UnityPBSLighting.cginc"
+			
 			struct v2f
 			{
 				V2F_SHADOW_CASTER;

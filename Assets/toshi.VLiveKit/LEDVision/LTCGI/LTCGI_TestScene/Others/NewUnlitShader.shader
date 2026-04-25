@@ -27,7 +27,7 @@ Shader "Unlit/LTCGI_ReceiveDebug"
             #include "UnityCG.cginc"
 
             // APIv1 で十分（diff/specを受け取るだけなので）
-            #include "Assets/_pi_/_LTCGI/Shaders/LTCGI.cginc"
+            #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/_pi_/_LTCGI/Shaders/LTCGI.cginc"
 
             float _LTCGI;
             float _Roughness;
