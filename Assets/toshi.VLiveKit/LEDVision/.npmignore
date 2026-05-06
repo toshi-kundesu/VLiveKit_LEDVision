@@ -1,2 +1,3 @@
 *.tgz
-
+*.unitypackage
+*.unitypackage.meta
