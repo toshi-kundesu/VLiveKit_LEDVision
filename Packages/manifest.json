@@ -9,8 +9,6 @@
     }
   ],
   "dependencies": {
-    "com.toshi.vlivekit.lensfilters": "0.0.5",
-    "com.toshi.vlivekit.cameraunit": "0.0.5",
     "com.unity.feature.development": "1.0.1",
     "com.unity.render-pipelines.high-definition": "14.0.8",
     "com.unity.textmeshpro": "3.0.6",
