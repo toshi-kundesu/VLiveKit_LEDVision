@@ -13,7 +13,7 @@
                    },
     "license":  "Unlicense",
     "dependencies":  {
-                         "com.toshi.vlivekit.lensfilters":  "0.0.2",
-                         "com.toshi.vlivekit.cameraunit":  "0.0.2"
+                         "com.toshi.vlivekit.lensfilters":  "0.0.3",
+                         "com.toshi.vlivekit.cameraunit":  "0.0.3"
                      }
 }
