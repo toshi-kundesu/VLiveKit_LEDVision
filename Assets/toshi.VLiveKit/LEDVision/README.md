@@ -5,7 +5,7 @@ LED スクリーン表現と LTCGI 連携を扱うための Unity / HDRP package
 ## Package
 
 - Package name: `com.toshi.vlivekit.ledvision`
-- Version: `0.0.6`
+- Version: `0.1.4`
 - Unity: 2022.3
 - Repository: https://github.com/toshi-kundesu/VLiveKit_LEDVision
 - Package root: `Assets/toshi.VLiveKit/LEDVision`

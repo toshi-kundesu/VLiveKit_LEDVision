@@ -29,7 +29,7 @@
         // This shader demonstrates how to use the APIv2 LTCGI functionality, which has access to per-light callbacks
 
         // preamble: include this first to get access to required types
-        #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI_structs.cginc"
+        #include "LTCGI_structs.cginc"
         
 
 
@@ -49,7 +49,7 @@
         #define LTCGI_V2_SPECULAR_CALLBACK callback_specular
 
         // then include this to finish the deal
-      #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/_pi_/_LTCGI/Shaders/LTCGI.cginc"
+      #include "LTCGI.cginc"
 
         // standard shader stuff follows...
         sampler2D _MainTex;

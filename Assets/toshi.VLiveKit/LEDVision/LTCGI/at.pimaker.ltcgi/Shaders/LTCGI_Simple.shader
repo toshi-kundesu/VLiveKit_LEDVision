@@ -28,7 +28,7 @@
             //#define LTCGI_SPECULAR_OFF
 
             #include "UnityCG.cginc"
-            #include "Assets/toshi.VLiveKit/LEDVision/LTCGI/_pi_/_LTCGI/Shaders/LTCGI.cginc"
+            #include "LTCGI.cginc"
         
 
             struct v2f
