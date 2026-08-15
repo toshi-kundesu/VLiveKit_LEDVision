@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VisualEnvironment
   m_EditorClassIdentifier: 
   active: 1
+  m_Version: 1
   skyType:
     m_OverrideState: 1
     m_Value: 1
@@ -22,6 +23,18 @@ MonoBehaviour:
   skyAmbientMode:
     m_OverrideState: 1
     m_Value: 1
+  planetRadius:
+    m_OverrideState: 0
+    m_Value: 6378.1
+  renderingSpace:
+    m_OverrideState: 0
+    m_Value: 1
+  centerMode:
+    m_OverrideState: 0
+    m_Value: 0
+  planetCenter:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: -6378.1, z: 0}
   windOrientation:
     m_OverrideState: 0
     m_Value: 0
@@ -282,6 +295,19 @@ MonoBehaviour:
   includeSunInBaking:
     m_OverrideState: 0
     m_Value: 0
+  m_SkyVersion: 1
+  enableDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  procedural:
+    m_OverrideState: 0
+    m_Value: 1
+  scrollDirection:
+    m_OverrideState: 0
+    m_Value: 0
+  m_ObsoleteScrollSpeed:
+    m_OverrideState: 0
+    m_Value: 1
   hdriSky:
     m_OverrideState: 1
     m_Value: {fileID: 8900000, guid: 3d278d7803abaad4c90f12a71a38ec14, type: 3}
@@ -308,6 +334,12 @@ MonoBehaviour:
       customValue: 100
       additiveValue: 0
       multiplyValue: 1
+  sunInitialRotation:
+    m_OverrideState: 0
+    m_Value: -Infinity
+  lockSun:
+    m_OverrideState: 0
+    m_Value: 0
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
@@ -347,19 +379,6 @@ MonoBehaviour:
   rectLightShadow:
     m_OverrideState: 0
     m_Value: 0
-  m_SkyVersion: 1
-  enableDistortion:
-    m_OverrideState: 0
-    m_Value: 0
-  procedural:
-    m_OverrideState: 0
-    m_Value: 1
-  scrollDirection:
-    m_OverrideState: 0
-    m_Value: 0
-  m_ObsoleteScrollSpeed:
-    m_OverrideState: 0
-    m_Value: 1
 --- !u!114 &-2859530564921387133
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -373,12 +392,21 @@ MonoBehaviour:
   m_Name: diffusion
   m_EditorClassIdentifier: 
   active: 1
-  stretch:
+  sourceMode:
     m_OverrideState: 0
-    m_Value: 0.75
+    m_Value: 1
+  blendMode:
+    m_OverrideState: 0
+    m_Value: 0
+  useTint:
+    m_OverrideState: 0
+    m_Value: 0
   tint:
     m_OverrideState: 0
     m_Value: {r: 0.55, g: 0.55, b: 1, a: 1}
+  stretch:
+    m_OverrideState: 0
+    m_Value: 0.75
   threshold:
     m_OverrideState: 0
     m_Value: 1
