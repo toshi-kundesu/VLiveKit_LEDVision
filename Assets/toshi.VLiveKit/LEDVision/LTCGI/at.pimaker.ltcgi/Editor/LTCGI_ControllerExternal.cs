@@ -228,6 +228,11 @@ AudioLink: {(LTCGI_Controller.AudioLinkAvailable == LTCGI_Controller.AudioLinkAv
 
             RecalculateAutoConfig(target as LTCGI_Controller);
 
+            if (string.IsNullOrEmpty(configPath) || !File.Exists(configPath))
+            {
+                EditorGUILayout.HelpBox("LTCGI configuration file could not be found.", MessageType.Error);
+                return;
+            }
             var config = File.ReadAllLines(configPath);
             var description = "";
             var resetDesc = false;
@@ -385,8 +390,9 @@ AudioLink: {(LTCGI_Controller.AudioLinkAvailable == LTCGI_Controller.AudioLinkAv
         {
             if (configPath == null || !File.Exists(configPath))
             {
-                configPath = AssetDatabase.GUIDToAssetPath("01c8aa443e7001b45b28cfe65d1c6786");
-                if (string.IsNullOrEmpty(configPath))
+                var configAssetPath = AssetDatabase.GUIDToAssetPath("01c8aa443e7001b45b28cfe65d1c6786");
+                configPath = LTCGI_Controller.ResolveAssetFilePath(configAssetPath);
+                if (string.IsNullOrEmpty(configPath) || !File.Exists(configPath))
                 {
                     Debug.LogError("LTCGI: Could not find config file! Please don't change the GUID or move the meta file!");
                     return;

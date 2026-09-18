@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -12,6 +13,26 @@ namespace pi.LTCGI
     #if UNITY_EDITOR
     public partial class LTCGI_Controller
     {
+        // AssetDatabase paths remain virtual for local and cached UPM packages.
+        // Resolve them only at the System.IO boundary; shader includes still need asset paths.
+        internal static string ResolveAssetFilePath(string assetPath)
+        {
+            if (string.IsNullOrEmpty(assetPath)) return assetPath;
+
+            var normalizedPath = assetPath.Replace('\\', '/');
+            if (!normalizedPath.StartsWith("Packages/", StringComparison.Ordinal))
+                return assetPath;
+
+            var package = UnityEditor.PackageManager.PackageInfo.FindForAssetPath(normalizedPath);
+            if (package == null || string.IsNullOrEmpty(package.resolvedPath))
+                return assetPath;
+
+            var packagePrefix = "Packages/" + package.name + "/";
+            return normalizedPath.StartsWith(packagePrefix, StringComparison.Ordinal)
+                ? Path.Combine(package.resolvedPath, normalizedPath.Substring(packagePrefix.Length))
+                : assetPath;
+        }
+
         public enum AudioLinkAvailability
         {
             NeedsCheck,

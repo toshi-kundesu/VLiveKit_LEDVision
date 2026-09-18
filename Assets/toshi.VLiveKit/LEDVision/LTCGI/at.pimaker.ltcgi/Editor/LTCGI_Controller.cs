@@ -108,10 +108,16 @@ namespace pi.LTCGI
         {
             var hasChanges = false;
             var cgincPath = Path.Combine("Assets", "toshi.VLiveKit", "LEDVision", "LTCGI", "_pi_", "_LTCGI", "Shaders", "LTCGI.cginc");
-            // assetsにない場合、UPMなのでPackagesを参照するcgincを作るPackages/com.toshi.vlivekit.ledvision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI.cginc
-            if (!File.Exists(cgincPath))
+            const string packageShaderPath = "Packages/com.toshi.vlivekit.ledvision/LTCGI/at.pimaker.ltcgi/Shaders/LTCGI.cginc";
+            var shaderAssetPath = AssetDatabase.GUIDToAssetPath("8cf428600c9bfc34db8f7f47b81a437e");
+            if (string.IsNullOrEmpty(shaderAssetPath)) shaderAssetPath = packageShaderPath;
+            var contents = "#include \"" + shaderAssetPath.Replace('\\', '/') + "\"";
+            var existingContents = File.Exists(cgincPath) ? File.ReadAllText(cgincPath) : null;
+            // Repair the old generated Windows include without replacing customized shims.
+            var isOldGeneratedInclude = existingContents != null &&
+                existingContents.Trim().Replace('\\', '/') == "#include \"" + packageShaderPath + "\"";
+            if (existingContents == null || (isOldGeneratedInclude && existingContents.Trim() != contents))
             {
-                var contents = "#include \"" + Path.Combine("Packages", "com.toshi.vlivekit.ledvision", "LTCGI", "at.pimaker.ltcgi", "Shaders", "LTCGI.cginc") + "\"";
                 Directory.CreateDirectory(Path.GetDirectoryName(cgincPath));
                 File.WriteAllText(cgincPath, contents);
                 hasChanges = true;
@@ -121,8 +127,10 @@ namespace pi.LTCGI
             if (!File.Exists(gizmoPath))
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(gizmoPath));
-                // Packages/com.toshi.vlivekit.ledvision/LTCGI/Gizmos/LTCGI_Screen_Gizmo.png
-                File.Copy(Path.Combine("Packages", "com.toshi.vlivekit.ledvision", "LTCGI", "Gizmos", "LTCGI_Screen_Gizmo.png"), gizmoPath, true);
+                var gizmoAssetPath = AssetDatabase.GUIDToAssetPath("0d6f5719d11dde5438f45ab0df7b4539");
+                if (string.IsNullOrEmpty(gizmoAssetPath))
+                    gizmoAssetPath = "Packages/com.toshi.vlivekit.ledvision/LTCGI/Gizmos/LTCGI_Screen_Gizmo.png";
+                File.Copy(ResolveAssetFilePath(gizmoAssetPath), gizmoPath, true);
                 hasChanges = true;
             }
 
