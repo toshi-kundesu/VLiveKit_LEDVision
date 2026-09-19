@@ -43,8 +43,9 @@ VLiveKit sandbox では submodule として `Packages/VLiveKit_LEDVision` に配
 
 Video Player は通常速度・音声ありのループ再生です。Unity 6000.4.6f1 で
 映像停止や音声の乱れを起こす VideoPlayer の回帰不具合を回避するため、
-`Skip On Drop` を無効にしています。フレーム落ちを追いかける設定へ戻す場合は、
-修正版の Unity で確認してください。この不具合は 6000.4.11f1 で修正されています。
+`Skip On Drop` をサンプルと共通 LEDVision プレハブで無効にしています。
+フレーム落ちを追いかける設定へ戻す場合は、修正版の Unity で確認してください。
+Issue Tracker では、この不具合は 6000.4.11f1 で修正済みとされています。
 [Unity Issue Tracker](https://issuetracker.unity.com/issues/17199/audiosampleprovider-buffer-overflow-warnings-are-thrown-when-any-video-is-played-in-play-mode)
 
 ## 注意

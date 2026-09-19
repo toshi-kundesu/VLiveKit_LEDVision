@@ -2578,7 +2578,7 @@ PrefabInstance:
     - target: {fileID: 2543162621245826017, guid: 1fbebd3987ca77a46b1f827d5aa56867,
         type: 3}
       propertyPath: m_SkipOnDrop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2543162621245826017, guid: 1fbebd3987ca77a46b1f827d5aa56867,
         type: 3}
